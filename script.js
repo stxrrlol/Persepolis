@@ -4,8 +4,7 @@ window.onload = function() {
   var audio = document.getElementById("audio");
   
   file.onchange = function() {
-    var files = this.files;
-    audio.src = URL.createObjectURL(files[0]);
+    audio.src = '../Levitating.mp3'
     audio.load();
     audio.play();
     var context = new AudioContext();
