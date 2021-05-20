@@ -2,9 +2,9 @@ window.onload = function() {
   
   var file = document.getElementById("thefile");
   var audio = document.getElementById("audio");
+  audio.src = '../Levitating.mp3'
   
   file.onchange = function() {
-    audio.src = '../Levitating.mp3'
     audio.load();
     audio.play();
     var context = new AudioContext();
